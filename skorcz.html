@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="generator" content="PTGui" />
+    <meta name="viewport" content="width=800,user-scalable=false" />
+    <title>WHITEDRON | Skórcz</title>
+	<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+
+<style type="text/css">
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 8pt;
+  margin: 0px;  
+}
+
+body, td {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 10pt;
+}
+
+#maintable {
+	height:100%;
+  width: 100%;
+}
+
+#toptd {
+  text-align: center;
+}
+#middletd {
+	height:0%;
+  width: 0%;
+  text-align: center;
+}
+#bottomtd {
+  text-align: center;
+}
+
+#mypanoviewer {
+	height:100%;
+  width: 100%;
+}
+
+#notice,
+#notice A:link,
+#notice A:visited,
+#notice A:active,
+#notice A:hover
+{
+  font-size: 7pt;
+  color: rgb(160,160,160);
+  text-align: right;
+  text-decoration: none;
+}
+
+#notice A:hover
+{
+  text-decoration: underline;
+}
+</style>
+
+
+<script type="text/javascript" src="res/panorama/skorcz/PTGuiViewer.js"></script>
+<script type="text/javascript">
+
+var viewer=new PTGuiViewer();
+
+viewer.setSwfUrl("PTGuiViewer.swf");
+
+viewer.preferHtmlViewer();
+
+viewer.setVars({
+  pano: "res/panorama/skorcz/panorama1_",
+  format: "14faces",
+  pan: 0,
+  minpan: -180,
+  maxpan: 180,
+  tilt:-20,
+  mintilt: -90,
+  maxtilt: 90,
+  fov: 110,
+  minfov: 10,
+  maxfov: 120,
+  autorotatespeed: 0,
+  autorotatedelay: 0,
+  maxiosdimension: 567,
+  showfullscreenbutton_flash: 1,
+  showfullscreenbutton_html: 1,
+  enablegyroscope: 0
+});
+
+viewer.embed("mypanoviewer");
+
+
+</script>
+
+  </head>
+  
+	<body>
+    <table id="maintable">
+      <tr>
+        <td id="middletd">
+          <div id="mypanoviewer"></div>
+        </td>
+      </tr>
+        </table>
+  </body>
+</html>

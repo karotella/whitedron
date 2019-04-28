@@ -1,0 +1,236 @@
+﻿/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* FONTS */
+@font-face {
+    font-family: "Aller_Bd";
+    src: url(../fonts/Aller_Bd.ttf)  format('truetype');
+}
+
+@font-face {
+	font-family: 'Pump Demi Bold LET';
+	src: url('../fonts/PumpDemiBoldLetPlain.eot');
+	src: url('../fonts/PumpDemiBoldLetPlain.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PumpDemiBoldLetPlain.woff') format('woff'),
+		url('../fonts/PumpDemiBoldLetPlain.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+/* HTML reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* CORE */
+a { text-decoration: none; }
+a img { border: 0 none; }
+img, a, input, button { border: 0 none; outline: 0 none; }
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+ol, ul { position: relative; }
+sup { font-size: smaller; vertical-align: super; line-height: 0; }
+.bs { box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -khtml-box-sizing: border-box; }
+.cl:before,
+.cl:after { content: ' '; display: table; }
+.cl:after { clear: both; }
+.cl { *zoom: 1; }
+.cp { cursor: pointer; }
+.db { display: block; }
+.df { display: flex; }
+.di { display: inline; }
+.dk { display: inline-block; }
+.dn { display: none; }
+.fh { height: 100%; min-height: 100%; }
+.fl { float: left; }
+.fr { float: right; }
+.f0 { float: none; }
+.nb { list-style: none; }
+.nd { color: inherit; text-decoration: none; }
+.nt { outline: 0 none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.no { opacity: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); }
+.nw { white-space: nowrap; }
+.pa { position: absolute; }
+.pr { position: relative; }
+.sa { max-width: 100%; max-height: 100%; }
+.sh { width: auto; max-height: 100%; }
+.sw { max-width: 100%; height: auto; }
+.tj { text-align: justify; }
+.tl { text-align: left; }
+.tr { text-align: right; }
+.tc { text-align: center; }
+.tc img { margin: 0 auto; }
+.lc { text-transform: lowercase; }
+.uc { text-transform: uppercase; }
+.np { padding: 0; }
+.nm { margin: 0; }
+.ma { margin: 0 auto; }
+.np-left { padding-left: 0; }
+.np-right { padding-right: 0; }
+.ud { text-decoration: underline; }
+
+/* GENERAL */
+html, body { font-family: 'Aller_Bd', sans-serif; font-size: 14px; color: #474747; background-color: #ffffff; line-height: 1; height: 100%; min-width: 320px; } 
+.wrapper { min-height: 100%; height: auto!important; margin: 0 auto -100px; } 
+.row { max-width: 1280px; }
+.row .row { margin: 0; }
+footer, .push { height: 100px; clear: both; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+section { padding: 50px 0; }
+h1, h3 { font-size: 26px; color: #2F2911; text-align: center; text-transform: uppercase; padding-bottom: 50px; } 
+h1:after, h3:after { content: ""; display: block; width: 100px; height: 2px; background-color: #ccc; margin: 20px auto; }
+p { font-size: 16px; }
+#oferta, #koszty, #kontakt { background-color: #f6f6f6; }
+
+/* HEADER */
+header { position: fixed; top: 0; right: 0; left: 0; height: 100px; background-color: rgba(255, 255, 255, 0.3); box-shadow: 0px 2px 4px -2px rgba(156, 156, 156, 0.5); z-index: 200; width: 100%; }
+header.scrolled { background-color: #fff !important; transition: background-color 200ms linear; }
+header .logo { max-width: 270px; width: 100%; } 
+header .menu { float: right; }
+header .menu li { display: inline-block; }
+header .menu li a { color: #2F2911; font-size: 16px; padding: 0 15px; text-decoration: none; text-transform: uppercase; display: block; float: left; line-height: 100px; cursor: pointer; } 
+header .menu li:last-child img { position: relative; top: 10px; }
+header .menu-icon { cursor: pointer; height: 25px; width: 35px; margin: 30px 0 0 0; }
+
+/* KV */
+#kv { overflow: hidden; position: relative; padding: 0; } 
+#kv video { position: relative; right: 0; top: 0; left: 0; max-width: 100%; height: auto; } 
+#kv .text-box { position: absolute; top: 45%; left: 50%; z-index: 100; text-align: center; width: 539px; margin: 0 0 0 -270px; height: 400px; }
+#kv h2 { font-family: 'Pump Demi Bold LET'; font-size: 100px; color: #ffffff; text-transform: uppercase; line-height: 80%; } 
+#kv h2:nth-of-type(2) { font-size: 13px; text-align: right; text-transform: none; } 
+
+/* O NAS */
+#o-nas .description { margin: 0 auto; padding: 70px 50px 0; color: #6E6B66; line-height: 1.5; text-align: justify; }
+#o-nas .description p { font-size: 17px; }
+
+/* OFERTA */
+#oferta .services { padding: 0 40px 60px; }
+#oferta .services .icon-box { position: relative; width: 40px; margin: 0 auto; padding-bottom: 60px; }
+#oferta .services .icon { width: 40px; display: block; margin: 0 auto 20px; position: absolute; top:0; left:0; overflow: hidden; }
+#oferta .services .icon-front { z-index: 150; transition: opacity .5s linear; cursor: pointer; } 
+#oferta .services .icon-box:hover > .icon-front{ opacity: 0; } 
+#oferta .services h4 { color: #2F2911; font-size: 16px; margin-bottom: 15px; font-weight: 600; }
+#oferta .services p { color: #6E6B66; line-height: 1.5; letter-spacing: 0.5px; font-weight: 300; text-align: justify; }
+
+/* REALIZACJE */
+#zdjecia .gfx-photo { margin-bottom: 25px; transition: transform .5s linear; }
+#zdjecia .gfx-photo:hover {
+	-webkit-filter: brightness(0.7);
+	-webkit-transform: scale(1.02)
+}
+#panoramy .panorama { max-width: 500px; width: 100%; }
+
+/* KOSZTY */
+#koszty p { line-height: 2; }
+#koszty ul { left: 40px; }
+#koszty li { font-size: 16px; margin-bottom: 15px; }
+
+/* WSPÓŁPRACA */
+#wspolpraca .slick-dots li button:before {font-size: 30px; }
+
+/* KONTAKT */
+#kontakt .contact-details p { line-height: 2; }
+#kontakt .contact-details a { color: #474747; }
+#kontakt .contact-details a:hover { color: #CBBD9A; }
+#kontakt form { margin-bottom: 100px; }
+#kontakt .form-group { margin-bottom: 20px; } 
+#kontakt label { display: block; font-size: 16px; padding-bottom: 20px; }
+#kontakt .form-control { display: block; width: 100%; padding: 10px; font-size: 16px; line-height: 1.25; color: #464a4c; background-color: #fff; border: 1px solid rgba(0,0,0,.15); border-radius: 5px; } 
+#kontakt .btn { font-size: 16px; font-family: "Aller_Bd"; background-color: #CBBD9A; border-color: #CBBD9A; border-radius: 5px; color: #fff; display: inline-block; cursor: pointer; line-height: 1.25; text-align: center; border: 1px solid transparent; padding: 10px; width: 100%; max-width: 150px; } 
+#kontakt .btn:hover { background-color: #AB9A6F; border-color: #AB9A6F; }
+
+/* FOOTER */
+footer { background-color: #444; } 
+footer p { color: #fff; font-size: 14px; padding-top: 45px; }
+footer .socials { padding-top: 30px; }
+footer .socials li { display: inline-block; padding: 0 10px; }
+footer .socials li a { font-size: 20px; line-height: 40px; height: 40px; width: 40px; background-color: #CBBD9A; border-radius: 50%; display: block; transition: all .4s ease; box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24); text-align: center; color: #fff; }
+footer .socials li a:hover { color: #fff; background-color: #2F2911; transition: all .4s ease; }
+
+/* SUBPAGE */
+.subpage { padding: 100px 0; } 
+.subpage .ue-plakat { display: block; max-width: 1120px; width: 100%; }
+
+@media screen and (max-width: 1366px) {
+	#o-nas .description { padding: 80px 50px; }
+	#o-nas .description p { font-size: 15px; }
+	#oferta .services p { font-size: 14px; }
+}
+
+@media screen and (max-width: 1280px) {
+	header { height: 85px; }
+	header .logo { max-width: 230px; }
+	header .menu li a { line-height: 85px; font-size: 14px; padding: 0 10px; }
+	section { padding: 50px 20px; }
+	#kv h2 { font-size: 80px; }
+	#o-nas .description { padding: 0 50px 0; }
+	.partners-slider { max-width: 1000px; margin: 0 auto; }
+}
+
+@media screen and (max-width: 1100px) {
+	#o-nas .description p { font-size: 14px; }
+}
+
+@media screen and (max-width: 1024px) {
+	header { height: 80px; padding: 0 30px; }
+	header .menu { display: none; background-color: rgba(255, 255, 255, 0.3); position: absolute; right: -30px; top: 80px; max-width: 200px; width: 100%; z-index: 200; }
+	header .menu.scrolled { background-color: #fff; }
+	header .menu li { display: block; }
+	header .menu li a { line-height: 1.5; float: none; padding: 10px; text-align: center; }
+	header .menu li:last-child img { position: static; }
+	header .menu-icon { display: block; float: right; } 
+	h1, h3 { font-size: 22px; }
+	p, #koszty li, #kontakt label, #kontakt .form-control, #kontakt .btn { font-size: 14px; }
+	#o-nas .author-photo { display: block; margin: 0 auto; max-width: 600px; width: 100%; }
+	#o-nas .description { max-width: 700px; padding: 50px; }
+	#oferta .services { padding: 0 60px 60px; }
+	#zdjecia .gfx-photo { max-width: 400px; width: 100%; }
+	#panoramy .panorama { margin: 0 auto 50px; }
+	footer p { font-size: 12px; }
+}
+
+@media screen and (max-width: 767px) {
+	header { height: 70px; }
+	header .logo { max-width: 180px; }
+	header .menu { top: 70px; }
+	header .menu-icon { margin: 23px 0 0 0; }
+	section { padding: 30px 20px; }
+	h1 { padding-bottom: 30px; }
+	h1:after, h3:after { margin: 10px auto; }
+	h1, h3 { font-size: 20px; }
+	#kontakt form { margin: 50px 0 100px; }
+	footer p { text-align: center; padding-top: 20px; }
+	footer .socials { float: none; text-align: center; padding-top: 15px; }
+}
+@media screen and (max-width: 640px) {
+	.text-box { display:none; }
+}
+
+@media screen and (max-width: 375px) {
+	header { height: 50px; padding: 0 10px; }
+	header .menu { top: 50px; background-color: #fff; }
+	header .menu-icon { margin: 15px 0 0 0; height: 21px; width: 30px; }
+	header .menu li a { font-size: 12px; padding: 10px 0 3px; }
+	#kv { padding-top: 50px; }
+	#o-nas .description { padding: 20px 0; }
+	#o-nas .description p, #oferta .services p, p, #koszty li, #kontakt label, #kontakt .form-control, #kontakt .btn { font-size: 12px; }
+	#oferta .services h4 { font-size: 14px; }
+	#oferta .services { padding: 0 30px 30px; }
+	#oferta .services .icon { width: 30px; }
+	.slick-dots { bottom: -40px; }
+	footer, .push { height: 90px; }
+	.wrapper { margin: 0 auto -90px; }
+	footer .socials li a { width: 30px; height: 30px; line-height: 30px; font-size: 16px; }
+}
